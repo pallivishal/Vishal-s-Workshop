@@ -1,0 +1,122 @@
+.heading{
+  text-align:center;
+  text-decoration: underline;
+}
+nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid;
+  border-style: groove;
+  /*align-items: stretch;*/
+  /*float: right;*/
+  padding: 1%;
+  /*border:solid;*/
+  }
+.site-title{
+text-align: center;
+}
+.links{
+  padding: 0.1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #ffff99;
+  border-radius: 10%;
+  margin-left: 0.3%;
+  margin-right:0.3%;
+  border:1px solid blue;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px  #ff6666, 2px 2px 2px #00ffff;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;  
+  /*border: 2px solid;*/
+  border-radius: 1%;
+  margin : 1%;
+  padding :1.5%;
+  width: 70%;
+  }
+.sidebar{
+  margin:1%;
+  /*margin-bottom: 10%;*/
+  padding:0.3%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #e6ffff;
+  border-left: 3px inset #66ffff;
+  /*border: 2px solid black;*/
+  /*width:20%;*/
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffcc;
+  border: 3px inset #ffff80 ;
+  margin: 1%;
+}
+.side-link{
+display: flex;
+/*align-items: flex-end;*/
+justify-content: center;
+margin: 0.7%;
+border: 1px solid;
+border-radius: 30%;
+padding:0.5%;
+text-align: center;
+}
+.article-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff ;
+  color: #000000 ;
+  font-family: sans-serif; 
+  border: 3px solid;
+  border-style: outset;
+  /*border-radius: 10%;*/
+  margin: 1%;
+  /*margin-right: 6%;*/
+}
+menu{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  /*float:left;*/
+  flex-wrap: wrap;
+  padding:1%;
+  margin:2%;
+  border:1px solid;
+}
+.menu-link{
+ text-align: center;
+ padding:1%;
+}
+.doc{
+  float:left;
+  margin:1.5%;
+}
+table,th{
+  border: 2px solid black;
+  text-align: left;
+  border-collapse: collapse;
+}
+tr,td{
+  border: 1px solid black;
+  padding : 1%;
+  width: 50%;
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
