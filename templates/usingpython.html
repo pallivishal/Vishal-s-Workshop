@@ -1,0 +1,179 @@
+{% extends "fopl.html" %}
+{% block article %}
+<div class="article-child">
+  <article class="article">
+    <h4>USING PYTHON</h4>
+    <menu>
+      <div class="menu-link">
+        <a href="#hello.py">
+          <h6>Hello World!</h6>
+        </a>
+      </div>
+      <div class="menu-link">
+        <a href="#name.py">
+          <h6>Variables</h6>
+        </a>
+      </div>
+    </menu>
+    <ol>
+      <li id="hello.py">
+        <h4>Hello World!</h4>
+        <p>This a technique to display content to the output Screen i.e. through the perphirals to the world.</p>
+        <h5>Program-1 : hello.py</h5>
+        <pre>
+          print("Hello, world")
+        </pre>
+        <table>
+          <tr>
+            <th>Input (Command)</th>
+            <th>Output (Compiler's result )</th>
+          </tr>
+          <tr>
+            <td><pre>python3 hello.py</pre></td>
+            <td><pre>Hello, world!</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li id="name.py">
+        <h4>Variables</h4>
+        <p>This is a technique to store data in a computer using programming languages</p>
+        <h5>name.py</h5>
+        <pre>
+          name = input("Type Name:")
+          print(f"hello, {name}!")
+        </pre>
+        <table>
+          <tr>
+            <th>Input (Command)</th>
+            <th>Output (Compiler's result)</th>
+          </tr>
+          <tr>
+            <td>
+              <pre>python3 name.py</pre>
+            </td>
+            <td>
+              <pre>Type Name:Vishal <br> hello, Vishal! </pre>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <h4>Types of Python Variables:</h4>
+          <li>Interger.</li>
+          <li>Float</li>
+          <li>Boolean expression</li>
+          <li>None</li>
+          <h5>Program-2.1: variables.py</h5>
+          <pre>i = 28
+print(f"i is {i}")
+
+f = 2.8
+print(f"f is {f}")
+
+b = True
+print(f"b is {b}")
+
+n = None
+print(f"n is {n}")
+
+          </pre>
+          <table>
+            <tr>
+              <th>Input (Command)</th>
+              <th>Output (Interpreter's Result)</th>
+            </tr>
+            <tr>
+              <td><pre>python3 variables.py </pre></td>
+              <td>
+                <pre>
+i is 28
+f is 2.8
+b is True
+n is None
+                </pre>
+              </td>
+            </tr>
+          </table>
+        </ul>
+      </li>
+      <li>
+        <h4>Conditions</h4>
+        <p>This technique is used to provide conditions in a program to a computer.</p>
+        <h5>Program-3: conditions.py</h5>
+        <pre>
+          x = int(input("Enter Integer Value:"))
+          if x > 0:
+              print("x is positive")
+          elif x < 0:
+              print("x is negative")
+          else:
+              print("x is 0")
+        </pre>
+        <table>
+          <tr>
+            <th>Input (Command)</th>
+            <th>Output (Interpreter's Result)</th>
+          </tr>
+          <tr>
+            <td><pre>python3 conditions.py </pre></td>
+            <td>
+              <pre>
+Enter Integer Value: 0
+x is 0
+              </pre>
+            </td>
+          </tr>
+        </table>
+      </li>
+      <li>
+        <h4>sequences</h4>
+        <p>A Programming technique of storing data in series.</p>
+        <ul>
+          <p>In python the data in squence can be stored in these following data types types:</p>
+          <li>String</li>
+          <li>Tupple</li>
+          <li>Lists</li>
+        </ul>
+        <h5>Program-4: sequences.py</h5>
+        <pre>
+          #string
+          name = "Alice"
+          #tupple
+          coordinates = (10.0, 20.0)
+          #lists
+          names = ["Alice", "Bob", "Charlie"]
+        </pre>
+        <table>
+          <tr>
+            <th>Python Interpreter</th>
+            <th>Output (Interpreter's Result)</th>
+          </tr>
+          <tr>
+            <td><pre> >>>name = "Alice" </pre></td>
+            <td><pre>-</pre></td>
+          </tr>
+          <tr>
+            <td><pre> >>>name[0]</pre></td>
+            <td><pre>'a'</pre></td>
+          </tr>
+          <tr>
+            <td><pre> >>>name[1]</pre></td>
+            <td><pre>'l'</pre></td>
+          </tr>
+          <tr>
+            <td><pre> >>>name[2]</pre></td>
+            <td><pre>'i'</pre></td>
+          </tr>
+          <tr>
+            <td><pre> >>>name[3]</pre></td>
+            <td><pre>'c'</pre></td>
+          </tr>
+          <tr>
+            <td><pre> >>>name[4]</pre></td>
+            <td><pre>'e'</pre></td>
+          </tr>
+        </table>
+      </li>
+    </ol>
+  </article>
+</div>
+{% endblock %}

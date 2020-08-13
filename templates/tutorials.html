@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+<header>
+  <div class="site-title">
+    <h1>Chamber Of Chiku</h1>
+  </div>
+  <nav>
+    <a href="{{url_for('home')}}" class="links">
+      <h3>Home</h3>
+    </a>
+    <a href="#" class="links"><h3>About</h3></a>
+    <a href="#" class="links"><h3>Store</h3></a>
+    <a href="{{url_for('docs')}}" class="links">
+      <h3>Docs</h3>
+    </a>
+    <a href="{{url_for('projects')}}" class="links">
+      <h3>Projects</h3>
+    </a>
+    <a href="{{url_for('tutorials')}}" class="links">
+      <h3>Tutorials</h3>
+    </a>
+                  <!--Calender & clock -->
+  </nav>
+</header>
+<main>
+  <div class="sidebar">
+    <div class="side-link">
+      <a href="{{url_for('fopl')}}">
+        <h6>Fundamentals of Prgramming Languages</h6>
+      </a>
+    </div>
+    <div class="side-link">
+      <a href="{{url_for('sql')}}" class="#">
+        <h6>Structured Query Language: SQL</h6>
+      </a>
+    </div>
+    <div class="side-link">
+      <a href="{{url_for('itdp')}}" class="#">
+        <h6>Intro to Deep Learning</h6>
+      </a>
+    </div>
+    <div class="side-link">
+      <a href="{{url_for('php')}}">
+        <h6>Hypertext Preprocessor</h6>
+      </a>
+    </div>
+    <div class="side-link">
+        <a href="{{url_for('html')}}" class="#">
+        <h6>Hyper Text MarkUp Language</h6>
+        </a>
+    </div>
+    </div>
+    {% block menu %}
+    {% endblock %}
+    {% block article %}
+    {% endblock %}
+</main>
+  </body>
+</html>

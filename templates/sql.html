@@ -1,0 +1,88 @@
+{% extends "tutorials.html"%}
+{% block article %}
+<div class="article">
+  <article class="article-child">
+    <ul>
+      <li>
+        <h4>Create</h4>
+      </li>
+      <li>
+        <h4>Insert</h4>
+      </li>
+      <li>
+        <h4>Update</h4>
+      </li>
+      <li>
+        <h4>Delete</h4>
+      </li>
+      <li>
+        <h4>Auto-complete</h4>
+      </li>
+      <li>
+        <h4>Functions</h4>
+      </li>
+      <li>
+        <h4>Limit</h4>
+      </li>
+      <li>
+        <h4>
+          <em>count</em>, <em>group by</em> and <em>having</em>
+        </h4>
+      </li>
+      <li>
+        <h4>Join</h4>
+      </li>
+      <li>
+        <h4>index</h4>
+      </li>
+      <li>
+        <h4>Drop</h4>
+      </li>
+    </ul>
+    <ul>
+      <h4>Bugs</h4>
+      <li>
+        <h4>SQL injections</h4>
+      </li>
+      <li>
+        <h4>Race Conditions</h4>
+      </li>
+      <li>
+        <h4>SQL Transaction</h4>
+        <ol>
+          <li>begin</li>
+          <li>Commit</li>
+        </ol>
+      </li>
+    </ul>
+    <ul>
+      <h4>Python Libraries</h4>
+      <li>os</li>
+      <li>sqlalchemy</li>
+    </ul>
+    <ul>
+      <h4>Installing PostgreSQL in WSL</h4>
+      <li>sudo apt-get update</li>
+      <li>sudo apt install postgresql postgresql-contrib</li>
+      <li>psql --version</li>
+      <li>
+        <h4>Controlling db-server</h4>
+        <ol>
+          <li>
+            <h4>Check the your db-server:</h4>
+            <p>sudo service postgresql status</p>
+          </li>
+          <li>
+            <h4>To start your db-server:</h4>
+            <p>sudo service postgresql</p>
+           </li>
+          <li>
+            <h4>To stop your db-server</h4>
+            <p>sudo service postgresql</p>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </article>
+</div>
+{% endblock %}

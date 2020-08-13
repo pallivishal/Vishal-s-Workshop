@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/style.css" >
+  </head>
+  <body>
+    <header>
+      <div class="site-title">
+        <h1>Chamber Of Chiku</h1>
+      </div>
+      <nav>
+
+        <a href="{{url_for('home')}}" class="links">
+          <h3>Home</h3>
+        </a>
+        <a href="#" class="links"><h3>About</h3></a>
+        <a href="#" class="links"><h3>Store</h3></a>
+        <a href="{{url_for('docs')}}" class="links">
+          <h3>Docs</h3>
+        </a>
+        <a href="{{url_for('projects')}}" class="links">
+          <h3>Projects</h3>
+        </a>
+        <a href="{{url_for('tutorials')}}" class="links">
+          <h3>Tutorials</h3>
+        </a>
+                      <!--Calender & clock -->
+      </nav>
+  </header>
+  <main>
+    <!--beginning of thw sidebar-->
+    <div class="sidebar">
+    <div class="side-link">
+      <a href="{{url_for('css')}}" class="#">
+        <h6>CSS</h6>
+      </a>
+    </div>
+    </div>
+    <!--ending of sidebar -->
+
+    {% block article %}
+    {% endblock %}
+  </main>
+  <footer>
+  </footer>
+  </body>
+</html>

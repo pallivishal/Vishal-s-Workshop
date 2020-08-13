@@ -1,0 +1,25 @@
+{% extends 'tutorials.html' %}
+{% block menu %}
+<menu>
+  <div class="menu-link">
+    <a href="{{url_for('usingpython')}}">
+      <h6>Using Python</h6>
+    </a>
+  </div>
+  <div class="menu-link">
+    <a href="{{url_for('usingclang')}}">
+      <h6>Using C </h6>
+    </a>
+  </div>
+  <div class="menu-link">
+    <a href="{{url_for('requisite')}}">
+      <h6>Pre-requisite</h6>
+    </a>
+  </div>
+</menu>
+{% endblock %}
+{% block article %}
+<div class="heading">
+  <h2>Fundamentals of Programming Languages</h2>
+</div>
+{% endblock %}

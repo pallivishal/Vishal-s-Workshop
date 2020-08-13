@@ -1,0 +1,102 @@
+{% extends 'projects.html' %}
+{% block article %}
+<div class="heading">
+  <h4> Angular.js <br><small>Linux Flavour: <em>Debian</em></small></h4>
+</div>
+<div class="article-child">
+      <article class="article">
+        <ol>
+          <li>
+            <h4>Installing Angular</h4>
+            <ol>
+              <li>apt-get install npm</li>
+              <li>npm --version</li>
+              <li>npm install -g @angular/cli</li>
+              <li>ng new angular-web-component</li>
+              <li>cd angular-web-component</li>
+              <li>ng add @angular/elements</li>
+              <li>ng generate component MyWebComponent</li>
+              <li>ng serve --open</li>
+            </ol>
+          </li>
+          <li>
+            <h4>Creating a Project</h4>
+            <p>We will create a project using Angular CLI</p>
+            <ol>
+              <li>
+                <h4>Set up your enviroment.</h4>
+                <ul>
+                  <li>
+                    <h4>Install the Angular CLI</h4>
+                    <p>Setting up the local enviroment and workspace</p>
+                    <ol>
+                      <li>
+                        <pre>apt-get install npm</pre>
+                      </li>
+                      <li>
+                        <pre>npm install -g @angular/cli</pre>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <h4>Create a workspace and initial application</h4>
+                    <p>To create a new workspace and initial starter app:</p>
+                    <ol>
+                      <li>
+                        <p>Run the CLI command <em>ng new</em> and provide the name <em>my-app</em>, as shown</p>
+                        <pre>ng new my-app</pre>
+                      </li>
+                      <li>
+                        <p>The <em>ng new</em> command prompts you for information about features to include in the initial app. Accept the defaults by pressing the Enter or Return key.</p>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+                </li>
+                <li>
+                  <h4>Run the application</h4>
+                  <p>The Angular CLI includes a server, so that you can build and serve your app locally.</p>
+                  <ol>
+                    <li>
+                      <p>Navigate to the workspace folder, such as my-app.</p>
+                      <pre>cd my-app</pre>
+                    </li>
+                    <li>
+                      <p>Run the following command:</p>
+                      <pre>ng serve --open</pre>
+                      <p>If, port 4200 is already in use, then try this below command:</p>
+                      <pre>ng server --port <strong>port_number</strong> --open </pre>
+                    </li>
+                  </ol>
+                </li>
+              </li>
+              <li>
+                <h4>Make changes to the application</h4>
+              </li>
+              <br>
+            <ul>
+              <li>
+                <h4>THE HERO EDITOR</h4>
+                <ol>
+                  <li>
+                    <h4>Create the heroes component</h4>
+                    <p>Using the Angular CLI, generate a new component named heroes.</p>
+                    <pre>ng generate component heroes</pre>
+                    <p>The CLI creates a new folder, src/app/heroes/, and generates the three files of the HeroesComponent along with a test file.</p>
+                    <ul>
+                      <li><h4>Add a hero component</h4></li>
+                      <li><h4>Show the hero</h4></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Show the <em>HeroesComponent</em> view</h4>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+            </ol>
+          </li>
+        </ol>
+    </article>
+</div>
+{% endblock %}

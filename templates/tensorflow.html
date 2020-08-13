@@ -1,0 +1,30 @@
+{% extends 'tutorials.html' %}
+{% block article %}
+<div class="article-child">
+  <article class="article">
+    <ul>
+      <h4>Introduction to Deep learning</h4>
+      <h4><small>Operating System: <em>Ubuntu</em></small></h4>
+      <li>python3 --version</li>
+      <li>pip3 --version</li>
+      <li>sudo apt update</li>
+      <li>sudo apt install python3-dev python3-pip python3-venv</li>
+      <li>python3 -m venv --system-site-packages ./venv</li>
+      <li>source ./venv/bin/activate  # sh, bash, or zsh</li>
+      <li>pip install --upgrade pip</li>
+      <li>pip list  # show packages installed within the virtual environment</li>
+      <li>deactivate  # don't exit until you're done using TensorFlow</li>
+      <li>
+        <h4>Enable TensorFlow with DirectML in WSL 2</h4>
+        <ol>
+          <li><h4>Install the latest Windows Insider Fast Build </h4></li>
+          <li><h4>Install the preview GPU driver</h4></li>
+          <li><h4>Set up the TensorFlow with DirectML preview</h4></li>
+          <li><h4>Tensorflow with DirectML samples and feedback</h4></li>
+        </ol>
+      </li>
+
+    </ul>
+  </article>
+</div>
+{% endblock %}

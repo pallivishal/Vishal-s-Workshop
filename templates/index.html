@@ -1,0 +1,42 @@
+  {% extends 'layouts.html' %}
+  {% block main %}
+  <main>
+  <div class="article-child">
+  <article class="article">
+    <ul>
+      <li>
+        <h4>Step 1 : Knowing the System</h4>
+        <ol>
+          <li>
+            <h5>Obtaining credential</h5>
+            <p>cat /home/bitnami/bitnami_credentials</p>
+          </li>
+          <li>
+            <h5>Testing the type of system :</h5>
+            <p>test ! -f "/opt/bitnami/common/bin/openssl" && echo "Approach A: Using system packages." || echo "Approach B: Self-contained installation."</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h4>Step 2 : Database</h4>
+        <ol>
+          <li>
+            <h5>MySQL Version</h5>
+            <p>To check the version of MySQL:</p>
+            <p><em>mysqld --version</em></p>
+          </li>
+          <li>
+            <h5>MySQL Port</h5>
+            <p>The default port for MySQL is <em>3306.</em></p>
+          </li>
+          <li>
+            <h5>Connect to MySQL</h5>
+            <p><em>mysql -u root -p</em></p>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </article>
+  </div>
+  </main>
+  {% endblock %}

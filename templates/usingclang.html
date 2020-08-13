@@ -1,0 +1,126 @@
+{% extends "fopl.html"%}
+{% block article %}
+<div class="article-child">
+  <article class="article">
+    <h4>Using C language</h4>
+    <menu>
+      <div class="menu-link">
+        <a href="#hello">
+          <h6>Hello World!</h6>
+        </a>
+      </div>
+      <div class="menu-link">
+        <a href="#variable">
+          <h6>Variable</h6>
+        </a>
+      </div>
+    </menu>
+    <ol>
+      <p>The test enviroment which are we are going to use is <strong><em>clang</em></strong></p>
+      <li id="hello">
+        <h4>Hello World!</h4>
+        <p>This is a program which used to perform the computer to show output on the screen in the form of text.</p>
+        <pre>
+          <h5>Program-1: hello.c</h5>
+          #include &ltstudio.h&gt
+
+          int main(void)
+          {
+            printf('hello, world!\n');
+          }
+        </pre>
+        <table>
+          <tr >
+            <th>Input command</th>
+            <th>Output</th>
+          </tr>
+          <tr>
+          <td>
+            <pre>clang hello.c</pre>
+          </td>
+          <td>
+            generates a output file <em>a.out</em>.
+          </td>
+          </tr>
+          <tr>
+            <td><pre>./a.out</pre></td>
+            <td><pre>hello, world!</pre></td>
+          </tr>
+          <tr>
+            <td><pre>clang -o hello hello.c </pre></td>
+            <td>generates a output file <em>hello</em>.</td>
+          </tr>
+          <tr>
+            <td><pre>./hello</pre></td>
+            <td><pre>hello, world!</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li id="variable">
+        <h4>Variable</h4>
+        <p>
+          variable is a programming technique of storing a value.
+        </p>
+        <pre>
+          <h5>Program-2: string.c</h5>
+          #include &ltstudio.h&gt
+          #include &ltcs50.h&gt
+
+          int main(void)
+          {
+            string s = get_string("What's your name?\n");
+            printf("hello, %s\n", s);
+          }
+        </pre>
+        <table>
+          <tr>
+            <th>Input(command)</th>
+            <th>Output(compiler's result)</th>
+          </tr>
+          <tr>
+            <td><pre>clang -o string string.c -lcs50 </pre></td>
+            <td> This will generates a output file <em>string</em>.</td>
+          </tr>
+          <tr>
+            <td>
+              <pre>./string</pre>
+            </td>
+            <td>
+              <pre>What's your name?<br>Vishal Palli<br>hello, Vishal Palli </pre>
+            </td>
+          </tr>
+          <tr>
+            <td><pre>make string</pre></td>
+            <td>generates a output file <em>string</em></td>
+          </tr>
+          <tr>
+            <td><pre>./string</pre></td>
+            <td><pre>What's your name?<br>Vishal Palli<br>hello, Vishal Palli</pre></td>
+          </tr>
+        </table>
+        <ul>
+          <li>
+            <h4>int</h4>
+            <p>'int' is a data type in c language which is used to store integer value in variable.</p>
+            <pre>
+              int counter = 0 ;
+            </pre>
+            <p>We can also increase an interger value of a variable without actually assigning a increased value to that variable.</p>
+            <pre>
+              counter = counter + 1;
+            </pre>
+            <p>There are two other ways of writing the above code. One is:</p>
+            <pre>
+              counter += 1;
+            </pre>
+            <p>And the other is:</p>
+            <pre>
+              counter++;
+            </pre>
+            <p>The above two variation of writing the same increment code is known as <em>syntactic sugar</em>.</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+</div>
+{% endblock %}
